@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>David Feltendal</title>
-    <meta charset="utf-8" />
+    <meta charset="ISO-8859-1" />
+    <!--<meta http-equiv="Content-Type" content="text/html" charset="utf-8" lang="da"/>--> 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -10,6 +11,7 @@
     <!--CSS-->
     <link href="../content/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../content/css/main.css" rel="stylesheet" />
+    <link href="content/css/normalize.css" rel="stylesheet" />
     <link href="../content/css/animate.css" rel="stylesheet" />
         
 </head>
@@ -36,7 +38,7 @@
                         <li><a href="#kompetancer">Kompetancer</a>
                         <!--<li><a href="#udtalelser">Udtalelser</a>-->
                         <li><a href="#kontakt">Kontakt</a>
-                        <li><a href="#cv">CV</a>
+                        <!--<li><a href="#cv">CV</a>-->
                     </ul>
                 </div>
             </div> <!-- End Container -->
@@ -45,7 +47,7 @@
     <!--main image and title text-->
     <div class="container-fluid">
         <section class="row title-row">
-            <div class="fill-screen" style="background-image: url('../content/img/profile.jpg');">
+            <div class="fill-screen" style="background-image: url('../content/img/download.jpg');">
                 <img class="img-responsive title-image" src="../content/img/DF-Logo-Black.gif" alt="DF-Logo-black" />
                 <h1 class="title">Velkommen til min side</h1>
                 <h3 class="title">her skal der stå noget tillokkende :)</h3>
@@ -193,55 +195,89 @@
             </div>
         </section>
         <!--Kontakt-->
-        <div class="page-header" id="kontakt">
-            <h2>Kontakt. <small>Kontakt mig for mere information.</small></h2>
-        </div> <!-- End Page header -->
-        <div class="row">
-            <div class="col-lg-4">
-                <p>Send en besked, eller kontakt mig på nedestående addresse:</p>
-                <address>
-                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                    <strong>David Feltendal</strong><br />
-                    Løget Dam 31 <br />
-                    7100, Vejle <br />
-                    P: +45 29624734
-                </address>
-            </div>
-            <div class="col-lg-8">
-                <form action="" class="form-horizontal">
-                    <div class="form-group">
-                        <label for="user-name" class="col-lg-2 control-label">Navn</label>
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="user-name" placeholder="Skriv dit navn" />
-                        </div>
-                    </div> <!-- End form group -->
-                    <div class="form-group">
-                        <label for="user-email" class="col-lg-2 control-label">Email</label>
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="user-email" placeholder="Skriv din email" />
-                        </div>
-                    </div> <!-- End form group -->
-                    <div class="form-group">
-                        <label for="user-url" class="col-lg-2 control-label">Website</label>
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="user-url" placeholder="Hvis du har en webside" />
-                        </div>
-                    </div> <!-- End form group -->
-                    <div class="form-group">
-                        <label for="user-message" class="col-lg-2 control-label">Meddelse</label>
-                        <div class="col-lg-10">
-                            <textarea name="user-message" id="user-message" class="form-control" cols="20" rows="10" placeholder="Skriv din besked her"></textarea>
-                        </div>
-                    </div> <!-- End form group -->
+        <section class="row text-banner">
+            <div class="page-header" id="kontakt">
+                <h2>Kontakt. <small>Kontakt mig for mere information.</small></h2>
+            </div> <!-- End Page header -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <p>Send en besked, eller kontakt mig på nedestående addresse:</p>
+                    <address>
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        <strong>David Feltendal</strong><br />
+                        Løget Dam 31 <br />
+                        7100, Vejle <br />
+                        P: +45 29624734
+                    </address>
+                </div>
+                <div class="col-lg-8">
+                    <form action="" class="form-horizontal">
+                        <div class="form-group">
+                            <label for="user-name" class="col-lg-2 control-label">Navn</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="user-name" placeholder="Skriv dit navn" />
+                            </div>
+                        </div> <!-- End form group -->
+                        <div class="form-group">
+                            <label for="user-email" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="user-email" placeholder="Skriv din email" />
+                            </div>
+                        </div> <!-- End form group -->
+                        <div class="form-group">
+                            <label for="user-url" class="col-lg-2 control-label">Website</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="user-url" placeholder="Hvis du har en webside" />
+                            </div>
+                        </div> <!-- End form group -->
+                        <div class="form-group">
+                            <label for="user-message" class="col-lg-2 control-label">Meddelse</label>
+                            <div class="col-lg-10">
+                                <textarea name="user-message" id="user-message" class="form-control" cols="20" rows="10" placeholder="Skriv din besked her"></textarea>
+                            </div>
+                        </div> <!-- End form group -->
 
-                    <div class="form-group">
-                        <div class="col-lg-10 col-lg-offset-2">
-                            <button type="submit" class="btn btn-success" id="btn-message">Send</button>
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button type="submit" class="btn btn-success" id="btn-message">Send</button>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
+            </div> <!-- End Row -->
+        </section>
+        <!--background img-->
+        <section class="row">
+            <div class="fill-screen fixed-attachment" style="background-image: url(../content/img/keyboard.jpg)">
             </div>
-        </div> <!-- End Row -->
+        </section>
+        <!--Footer-->
+        <footer>
+            <hr />
+            <div class="container text-center">
+                <h3>Subscribe for more free stuff</h3>
+                <p>Enter your name and email</p>
+                <form action="" class="form-inline">
+                    <div class="form-group">
+                        <label for="Subscription">Subscribe</label>
+                        <input type="text" class="form-control" id="subcription" placeholder="Your Name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter Your Email" required />
+                    </div>
+                    <button type="submit" class="btn btn-success" id="btn-subscribe">Subscribe</button>
+
+                </form>
+                <hr />
+                <ul class="list-inline">
+                    <li><a href="http://www.twitter.com">Twitter</a></li>
+                    <li><a href="http://www.facebook.com/massi.dk">Facebook</a></li>
+                    <li><a href="http://www.youtube.com">YouTube</a></li>
+                </ul>
+                <p>&copy; Copyright @ 2016</p>
+            </div> <!-- End Container -->
+        </footer> <!-- End Footer -->
     </div>
 
     <!--<pre>
