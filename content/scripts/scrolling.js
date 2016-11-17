@@ -5,9 +5,9 @@ $(function() {
     });
 
     // add Bootstrap's scrollspy
-    $('body').scrollspy({
-        target: '.navbar'
-    });
+    //$('body').scrollspy({
+    //    target: '.navbar'
+    //});
     // smooth scrolling
     $('nav a, .down-button a').bind('click', function() {
         $('html, body').stop().animate({
