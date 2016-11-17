@@ -16,3 +16,12 @@ $(function() {
         event.preventDefault();
     });
 });
+(function () {
+    var dialog = document.getElementById('window');
+    document.getElementById('btn-message').onclick = function () {
+        dialog.show();
+    };
+    document.getElementById('exit').onclick = function () {
+        dialog.close();
+    };
+})();
